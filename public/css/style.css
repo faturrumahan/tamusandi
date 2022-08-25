@@ -1,0 +1,12 @@
+body {
+    background-image: url("/bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+@media only screen and (min-width: 992px) {
+    .spacing-top {
+        margin-top: 150px;
+    }
+}
