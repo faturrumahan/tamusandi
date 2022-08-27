@@ -97,32 +97,34 @@
         </div>
         @if (!$type_filter && $date_filter)
             <div class="col-6">
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">TK</th>
-                            <th scope="col">SD</th>
-                            <th scope="col">SMP</th>
-                            <th scope="col">SMA/SMK</th>
-                            <th scope="col">Mahasiswa</th>
-                            <th scope="col">Umum</th>
-                            <th scope="col">Total</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">Jumlah Pengunjung</th>
-                            <td>{{ $visitor_tk }}</td>
-                            <td>{{ $visitor_sd }}</td>
-                            <td>{{ $visitor_smp }}</td>
-                            <td>{{ $visitor_sma }}</td>
-                            <td>{{ $visitor_mahasiswa }}</td>
-                            <td>{{ $visitor_umum }}</td>
-                            <td>{{ $visitor_total }}</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">TK</th>
+                                <th scope="col">SD</th>
+                                <th scope="col">SMP</th>
+                                <th scope="col">SMA/SMK</th>
+                                <th scope="col">Mahasiswa</th>
+                                <th scope="col">Umum</th>
+                                <th scope="col">Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Jumlah Pengunjung</th>
+                                <td>{{ $visitor_tk }}</td>
+                                <td>{{ $visitor_sd }}</td>
+                                <td>{{ $visitor_smp }}</td>
+                                <td>{{ $visitor_sma }}</td>
+                                <td>{{ $visitor_mahasiswa }}</td>
+                                <td>{{ $visitor_umum }}</td>
+                                <td>{{ $visitor_total }}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         @endif
         @if ((!$date_filter && $type_filter) || ($date_filter && $type_filter))
