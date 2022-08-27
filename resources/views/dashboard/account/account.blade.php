@@ -21,7 +21,7 @@
                     <th scope="col">Nama</th>
                     <th scope="col">Email</th>
                     <th scope="col">Status</th>
-                    <th scope="col">Action</th>
+                    {{-- <th scope="col">Action</th> --}}
                 </tr>
             </thead>
             <tbody>
@@ -66,16 +66,15 @@
                             </form>
                             {{-- <a href="/dashboard/account/{{ $user->id }}/edit" class="btn btn-primary">edit</a> --}}
                         </td>
-                        <td>
+                        {{-- <td>
                             <form action="/dashboard/account/{{ $user->id }}" method="post" class="d-inline">
                                 @method('delete')
                                 @csrf
                                 <button class="btn btn-sm btn-danger"
                                     onclick="return confirm('Anda Yakin Ingin Menghapus Akun {{ $user->name }}?')"
                                     @if (auth()->user()->id == $user->id) disabled @endif>delete</button>
-                                {{-- <a href="/dashboard/account/{{ $user->id }}/edit" class="btn btn-primary">edit</a> --}}
                             </form>
-                        </td>
+                        </td> --}}
                     </tr>
                 @endforeach
             </tbody>
