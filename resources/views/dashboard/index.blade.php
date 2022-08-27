@@ -12,7 +12,7 @@
         <h5>Jumlah pengunjung tahun ini: {{ $year }}</h5>
         <h5>Jumlah pengunjung total: {{ $total }}</h5>
     </div> --}}
-    <div class="col-5 mb-5">
+    <div class="table-responsive col-lg-5 mb-5">
         <table class="table">
             <thead>
                 <tr>
