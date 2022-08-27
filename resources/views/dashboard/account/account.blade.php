@@ -56,7 +56,7 @@
                                 @endif
                                 <button type="submit" class="btn btn-sm btn-success"
                                     onclick="return confirm('Anda Yakin Ingin Mengubah Status Akun {{ $user->name }}?')"
-                                    @if (auth()->user()->id == $user->id && auth()->user()->id !== 1) disabled @endif>
+                                    @if (auth()->user()->id == $user->id && auth()->user()->id != 1) disabled @endif>
                                     @if ($user->is_admin)
                                         Admin
                                     @else
