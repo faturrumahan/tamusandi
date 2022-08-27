@@ -15,6 +15,7 @@
                     </div>
 
                     <input type="hidden" name="is_admin" value="0">
+                    <input type="hidden" name="super_admin" value="0">
                     <div class="form-floating">
                         <input type="text"
                             class="form-control rounded-top

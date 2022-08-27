@@ -20,7 +20,8 @@ class RegisterController extends Controller
             'name' => 'required|max:255',
             'email' => 'required|email:dns|unique:users',
             'password' => 'required|min:5|max:255',
-            'is_admin' => 'required'
+            'is_admin' => 'required',
+            'super_admin' => 'required',
         ]);
 
         $validatedAcc['password'] = bcrypt($validatedAcc['password']);
