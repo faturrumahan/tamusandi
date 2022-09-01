@@ -73,7 +73,7 @@
                     <th scope="col">Jumlah Pengunjung</th>
                     <th scope="col">Instagram</th>
                     <th scope="col">Rate</th>
-                    <th scope="col">Kritik & Saran</th>
+                    <th scope="col">Komentar</th>
                     {{-- <th scope="col">test</th> --}}
                 </tr>
             </thead>
